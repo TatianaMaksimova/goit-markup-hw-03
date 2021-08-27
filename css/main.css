@@ -56,6 +56,13 @@ ul {
 }
 
 /* Главная страница "Студия". Первая секция с баннером "Эффективные решения" */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid blue;
+}
+
 .banner-name {
   color: var(--bgd-text-color);
   font-weight: 900;
