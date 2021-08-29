@@ -13,9 +13,41 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* ШАПКА-ВЕРХ С ЛОГОТИПОМ */
+.main-cont {
+  display: flex;
+  align-items: center;
 }
 
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 50px;
+}
+/* .contacts .list-item + .list-item {
+  margin-left: 50px;
+} */
+
 .logo {
+  margin-right: 93px;
+
   color: #000000;
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -24,8 +56,7 @@ ul {
 }
 
 .accent,
-.link.main,
-.link.portfolio {
+.link.main {
   color: var(--accent-color);
 }
 
@@ -43,6 +74,9 @@ ul {
 }
 
 .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -55,15 +89,20 @@ ul {
   color: var(--accent-color);
 }
 
-/* Главная страница "Студия". Первая секция с баннером "Эффективные решения" */
+/* Главная страница "Студия". 
+Первая секция с баннером "Эффективные решения" */
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid blue;
 }
 
 .banner-name {
+  margin-top: 0;
+
   color: var(--bgd-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -80,8 +119,6 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
-  align-items: center;
   text-align: center;
   color: var(--bgd-text-color);
   background-color: var(--accent-color);
