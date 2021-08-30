@@ -12,12 +12,28 @@ body {
 }
 
 ul {
-  list-style: none;
   padding: 0;
   margin: 0;
+
+  list-style: none;
 }
+
+img {
+  display: block;
+}
+
 /* ШАПКА-ВЕРХ С ЛОГОТИПОМ */
-.main-cont {
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid blue;
+}
+
+.cap {
   display: flex;
   align-items: center;
 }
@@ -27,25 +43,23 @@ ul {
   align-items: center;
 }
 
-.contacts {
+.list {
   display: flex;
   margin-left: auto;
 }
 
-.link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.list-item:not(:last-child) {
+/* .list-item:not(:last-child) {
   margin-right: 50px;
 }
-/* .contacts .list-item + .list-item {
+
+.contacts .list-item + .list-item {
   margin-left: 50px;
 } */
 
 .logo {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-right: 93px;
 
   color: #000000;
@@ -61,6 +75,10 @@ ul {
 }
 
 .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -68,38 +86,16 @@ ul {
   text-decoration: none;
 }
 
+.link.item {
+  color: var(--secondary-text-color);
+}
+
 .link:hover,
 .link:focus {
   color: var(--accent-color);
 }
 
-.item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  text-decoration: none;
-}
-
-.item:hover,
-.item:focus {
-  color: var(--accent-color);
-}
-
-/* Главная страница "Студия". 
-Первая секция с баннером "Эффективные решения" */
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 2px solid blue;
-}
-
+/* СТУДИЯ (MAIN) */
 .banner-name {
   margin-top: 0;
 
@@ -113,13 +109,13 @@ ul {
 
 .banner {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .ban-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
   color: var(--bgd-text-color);
   background-color: var(--accent-color);
 }
@@ -129,7 +125,7 @@ ul {
   background-color: #188ce8;
 }
 
-/* 2 секция "Наши преимущества"*/
+/* НАШИ ПРЕИМУЩЕСТВА */
 .head {
   font-weight: 700;
   font-size: 14px;
@@ -143,7 +139,7 @@ ul {
   line-height: 1.7;
 }
 
-/* 3 секция "Чем мы занимаемся" */
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ */
 .do,
 .comands {
   font-weight: 700;
@@ -152,7 +148,7 @@ ul {
   text-align: center;
 }
 
-/* 4 секция "Наша команда"*/
+/* НАША КОМАНДА */
 .name,
 .job {
   font-weight: 500;
@@ -170,7 +166,7 @@ ul {
   background-color: #f5f4fa;
 }
 
-/* Начало стилизации страницы Портфолио (main) */
+/* ПОРТФОЛИО (MAIN) */
 .button {
   font-weight: 500;
   font-size: 16px;
@@ -187,11 +183,6 @@ ul {
   background-color: var(--accent-color);
 }
 
-.list {
-  color: var(--primary-text-color);
-  text-decoration: none;
-}
-
 .project-name {
   font-weight: bold;
   font-size: 18px;
@@ -203,9 +194,8 @@ ul {
   font-size: 16px;
   line-height: 30px;
 }
-/* Конец стилизации main Портфолио */
 
-/* Footer */
+/* ФУТЕР */
 .footer {
   background-color: #2f303a;
   color: var(--bgd-text-color);
@@ -221,9 +211,10 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
+  text-decoration: none;
 }
 
-.footer .item {
+.footer .bottom {
   color: rgba(255, 255, 255, 0.6);
 }
 
