@@ -44,7 +44,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
 }
 
 .page-header {
@@ -292,14 +292,19 @@ a {
 .project-lists {
   display: flex;
   flex-wrap: wrap;
-  /* margin-right: -30px;
-  margin-bottom: -30px; */
+  /* outline: 1px solid tomato; */
+
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .project-item {
-  /* margin-right: 30px;
-  margin-bottom: 30px; */
   width: 370px;
+  /* outline: 1px solid teal; */
+
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 /* .project-item:nth-child(3n) {
